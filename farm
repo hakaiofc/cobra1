@@ -1,0 +1,49 @@
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ReplicatedStorage = game:GetService("Players")
+
+local function task()
+local args = {
+    [1] = "Left Punch"
+}
+local args = {
+    [1] = "Right Punch"
+}
+local args = {
+    [1] = "Crane Kick Actual Kick"
+}
+local args = {
+    [1] = "Sweep"
+}
+local args = {
+    [1] = "Double Kick"
+}
+local Event = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack")
+Event:FireServer(unpack(args))
+local Event = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack")
+Event:FireServer(unpack(args))
+local Event = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack")
+Event:FireServer(unpack(args))
+local Event = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack")
+Event:FireServer(unpack(args))
+
+game:GetService("ReplicatedStorage").Remotes.Dumbbell:FireServer()
+
+game:GetService("ReplicatedStorage").Remotes.Pushup:FireServer()
+
+game:GetService("ReplicatedStorage").Remotes.Situp:FireServer()
+
+game:GetService("ReplicatedStorage").Remotes.BenchToggle:FireServer()
+
+game:GetService("Players").LocalPlayer.Character.Bat.Attack:FireServer()
+
+game:GetService("Players").LocalPlayer.Character.Bat.Attack:FireServer()
+end
+while true do
+    for i = 1, 2.3 do
+        task()
+        wait()  
+    end
+    wait(0.485)  
+end
+end
