@@ -1,8 +1,5 @@
-
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local ReplicatedStorage = game:GetService("Players")
-
-local function task()
+_G.KVN_OFC = true 
+while _G.KVN_OFC do wait(0.485)if _G.KVN_OFC == false then return end
 local args = {
     [1] = "Left Punch"
 }
@@ -20,6 +17,14 @@ local args = {
 }
 local Event = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack")
 Event:FireServer(unpack(args))
+local Event = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack")
+Event:FireServer(unpack(args))
+local Event = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack")
+Event:FireServer(unpack(args))
+local Event = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack")
+Event:FireServer(unpack(args))
+local Event = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack")
+Event:FireServer(unpack(args))
 
 game:GetService("ReplicatedStorage").Remotes.Dumbbell:FireServer()
 
@@ -34,12 +39,4 @@ game:GetService("Players").LocalPlayer.Character.Bat.Attack:FireServer()
 game:GetService("Players").LocalPlayer.Character.Bat.Attack:FireServer()
 
 game:GetService("Players").LocalPlayer.Character.Bat.Attack:FireServer()
-end
-while true do
-    for i = 1, 2.3 do
-        task()
-        wait()  
-    end
-    wait(0.485)  
-end
 end
