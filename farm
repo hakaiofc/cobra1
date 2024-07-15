@@ -20,12 +20,6 @@ local args = {
 }
 local Event = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack")
 Event:FireServer(unpack(args))
-local Event = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack")
-Event:FireServer(unpack(args))
-local Event = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack")
-Event:FireServer(unpack(args))
-local Event = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack")
-Event:FireServer(unpack(args))
 
 game:GetService("ReplicatedStorage").Remotes.Dumbbell:FireServer()
 
@@ -34,6 +28,8 @@ game:GetService("ReplicatedStorage").Remotes.Pushup:FireServer()
 game:GetService("ReplicatedStorage").Remotes.Situp:FireServer()
 
 game:GetService("ReplicatedStorage").Remotes.BenchToggle:FireServer()
+
+game:GetService("Players").LocalPlayer.Character.Bat.Attack:FireServer()
 
 game:GetService("Players").LocalPlayer.Character.Bat.Attack:FireServer()
 
